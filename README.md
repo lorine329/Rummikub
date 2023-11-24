@@ -19,6 +19,10 @@ Rummikub is played with two sets of 52 tiles, each with numbers ranging from 1 t
    Variables: Same as the first model, but each tile has a specific value (vi).<br>
    Constraints: Similar to the first model with the objective function adjusted for value.
 
+## Optimization Process Flow
+
+<img src="image/design_structure.jpg">
+
 ## Probelm Exntensions
 
 1. Four-Player Scenarios:<br>
@@ -29,10 +33,6 @@ Rummikub is played with two sets of 52 tiles, each with numbers ranging from 1 t
    Consider time-based constraints to simulate real-time decision-making, enhancing strategic planning.
 4. Player Behavior Patterns and Learning Algorithms:<br>
    Incorporate player behavior analysis and machine learning algorithms for a more dynamic and realistic gaming experience.
-
-## Design Structure
-
-<img src="image/design_structure.jpg">
 
 ## Libraries
 
