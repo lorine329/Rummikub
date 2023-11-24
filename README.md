@@ -11,12 +11,12 @@ Rummikub is a tile based game for 2 to 4 players, combining elements of the card
 Rummikub is played with two sets of 52 tiles, each with numbers ranging from 1 to 13 in four different colors and two joker tiles. The goal is to be the first to empty the rack by forming groups and runs of matching numbers. To solve the final hand, we formulated two ILP models:
 
 1. Maximizing Tiles Played:<br>
-   Objective: Maximize the number of tiles played from the rack to the table ( \sum\_{i} y_i)<br>
-   Variables: Times a tile is played (\( y_i \)); Times a set is played(\( x_j \))).<br>
+   Objective: Maximize the number of tiles played from the rack to the table ( $\sum\_{i} y_i$)<br>
+   Variables: Times a tile is played ($y_i$); Times a set is played($x_j$).<br>
    Constraints: The sets are formed only from tiles on the rack or table; number of times a tile could be placed on table is less than the number of times it would be on rack.
 2. Maximizing Total Value:<br>
-   Objective: Maximize the total value of tiles played ( \sum\_{i} v_i \cdot y_i).<br>
-   Variables: Same as the first model, but each tile has a specific value (\( v_i \)).<br>
+   Objective: Maximize the total value of tiles played ( $\sum\_{i} v_i \cdot y_i$).<br>
+   Variables: Same as the first model, but each tile has a specific value.<br>
    Constraints: Similar to the first model with the objective function adjusted for value.
 
 ## Optimization Process Flow
