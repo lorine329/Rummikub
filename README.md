@@ -1,6 +1,4 @@
-# Rummikub Solver
-
-## Addressing Rummikub Challenges with ILP
+# Rummikub Solver: Addressing Rummikub Challenges with ILP
 
 Team: Yu Lu, Jingwen He, Kelly Kao, Ge Gao, Yanhuan Huang
 
@@ -15,7 +13,7 @@ Rummikub is played with two sets of 52 tiles, each with numbers ranging from 1 t
 1. Maximizing Tiles Played:<br>
    Objective: Maximize the number of tiles played from the rack to the table.<br>
    Variables: Yi (times a tile is played) and Xj (times a set is played).<br>
-   Constraints: Ensure the sets are formed only from tiles on the rack or table, and number of times a tile could be placed on table is less than the number of times it would be on rack.
+   Constraints: The sets are formed only from tiles on the rack or table; number of times a tile could be placed on table is less than the number of times it would be on rack.
 2. Maximizing Total Value:<br>
    Objective: Maximize the total value of tiles played.<br>
    Variables: Same as the first model, but each tile has a specific value (vi).<br>
@@ -41,3 +39,7 @@ Rummikub is played with two sets of 52 tiles, each with numbers ranging from 1 t
 - **Gurobi**
 - **Matplotlib**
 - **Numpy**
+
+## Reference
+
+Den Hertog, D., and P. B. Hulshof. “Solving Rummikub Problems by Integer Linear Programming.” The Computer Journal, vol. 49, no. 6, 1 Nov. 2006, pp. 665–669, https://doi.org/10.1093/comjnl/bxl033.​
